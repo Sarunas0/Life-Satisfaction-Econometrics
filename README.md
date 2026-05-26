@@ -17,6 +17,14 @@ The analysis investigates how life satisfaction is associated with:
 
 The dependent variable is the Cantril Ladder life satisfaction score.
 
+## Key Findings
+
+- GDP per capita showed a positive relationship with life satisfaction.
+- Higher unemployment and under-5 mortality rates were associated with lower life satisfaction.
+- Access to clean cooking fuels and technologies was positively associated with wellbeing.
+- Diagnostic testing identified multicollinearity and heteroskedasticity within the model.
+- A fixed effects panel model was selected following Hausman testing.
+
 ## Dataset
 
 The dataset combines international country-year observations from:
@@ -56,21 +64,42 @@ The analysis found that GDP per capita, unemployment, inflation, under-5 mortali
 
 The Hausman test supported the use of a fixed effects model. Diagnostic testing also identified multicollinearity and heteroskedasticity, which were discussed as limitations and areas for further improvement.
 
+## Screenshots
+
+### Variable Relationships
+
+![Scatterplots of life satisfaction indicators](scatterplots.png)
+
+### Regression Results
+
+![Fixed effects regression results](regression_results.png)
+
+### Multicollinearity Diagnostics
+
+![VIF results](vif_results.png)
+
+### Heteroskedasticity Test
+
+![Breusch-Pagan test results](breusch_pagan_test.png)
+
 ## Project Structure
 
 ```text
 Life-Satisfaction-Econometrics/
 │
-├── R code/
-│   └── dissertation_analysis.R
-│
-├── dissertation/
-│   └── Dissertation life satisfaction.docx
-│
-├── outputs/
-│   ├── model_summary.html
-│   ├── bp_test_table.csv
-│   └── table_output.html
-│
+├── dissertation_analysis.R
+├── Dissertation life satisfaction.docx
+├── scatterplots.png
+├── regression_results.png
+├── vif_results.png
+├── breusch_pagan_test.png
 └── README.md
+```
 
+## Limitations
+
+The model showed evidence of heteroskedasticity and multicollinearity. Future work could improve the analysis using robust standard errors, alternative model specifications, and additional social indicators.
+
+## Author
+
+Sarunas Surdokas
