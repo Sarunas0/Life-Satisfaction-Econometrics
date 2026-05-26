@@ -1,5 +1,7 @@
 # Life Satisfaction Econometrics Project
 
+Tools: R, Econometrics, Panel Data Analysis, Statistical Diagnostics
+
 This project analyses the relationship between life satisfaction and economic, health, and environmental indicators across countries using panel data regression in R.
 
 The study was originally completed as part of my MSc Economics dissertation at Birkbeck, University of London.
